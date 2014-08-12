@@ -1,0 +1,79 @@
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #fff;
+	color: #000;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+a {
+  color: #333;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #ccc;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+/* To Navigation Style */
+.nav-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.nav-top a {
+	display: inline-block;
+	padding: 2em;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.nav-top span.right {
+	float: right;
+}
+
+.nav-top span.right a {
+	display: block;
+	float: left;
+}
+
+.nav-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'FontAwesome';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.nav-icon-drop:before {
+	content: "\f043";
+}
+
+.nav-icon-prev:before {
+	content: "\f060";
+}
+
+
+@media screen and (max-width: 35em) {
+	.nav-icon span {
+		display: none;
+	}
+}
