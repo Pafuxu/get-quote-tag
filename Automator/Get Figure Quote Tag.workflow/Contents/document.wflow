@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "Safari"	activate	set theURL to URL of front document	set theTitle to name of front document	set selectedText to (do JavaScript "(''+getSelection())" in document 1)	set the clipboard to "&lt;blockquote class=\"block-quote_content\" cite=\"" &amp; theURL &amp; "\" title=\"" &amp; theTitle &amp; "\"&gt;" &amp; return &amp; "	" &amp; "&lt;p&gt;" &amp; selectedText &amp; "&lt;/p&gt;" &amp; return &amp; "	" &amp; "&lt;footer&gt;" &amp; return &amp; "		" &amp; "&lt;cite&gt;&amp;mdash; &lt;a href=\"" &amp; theURL &amp; "\"&gt;" &amp; theTitle &amp; "&lt;/cite&gt;" &amp; return &amp; "	" &amp; "&lt;/footer&gt;" &amp; return &amp; "&lt;/blockquote&gt;" &amp; return as stringend tell</string>
+					<string>tell application "Safari"	activate	set theURL to URL of front document	set theTitle to name of front document	set selectedText to (do JavaScript "(''+getSelection())" in document 1)	set the clipboard to "&lt;figure&gt;" &amp; return &amp; "&lt;blockquote cite=\"" &amp; theURL &amp; "\"&gt;&lt;p&gt;" &amp; selectedText &amp; "&lt;/p&gt;&lt;/blockquote&gt;" &amp; return &amp; "&lt;figcaption&gt;&amp;mdash; &lt;cite&gt;&lt;a href=\"" &amp; theURL &amp; "\" title=\"" &amp; theTitle &amp; "\"&gt;" &amp; theTitle &amp; "&lt;/a&gt;&lt;/cite&gt;&lt;/figcaption&gt;" &amp; return &amp; "&lt;/figure&gt;" &amp; return as stringend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
