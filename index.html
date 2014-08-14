@@ -11,6 +11,7 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/demo.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/perfBar.css" rel="stylesheet">
   </head>
   <body>
     <div class="nav-top clearfix">
@@ -27,6 +28,10 @@
         	<cite>— <a href="http://www.kanzaki.com/docs/html/htminfo14.html#S13.1">強調,引用,グループ化,画像などの要素 -- ごく簡単なHTMLの説明</cite>
         </footer>
       </blockquote>
+      <div class="gist-quote">
+        <h3>引用タグを自動化する AppleScript</h3>
+        <script src="https://gist.github.com/Pafuxu/87da9f56207cc48da141.js"></script>
+      </div>
       <div class="social-links">
         <ul class="social-buttons">
           <li><a href="https://twitter.com/pafuxu/" class="social-btn"><i class="fa fa-twitter"></i></a></li>
@@ -35,5 +40,28 @@
         </ul>
       </div>
     </div><!-- /.content-wrap -->
+
+
+  <!-- This is all you need to start using PerfBar! -->
+  <script type="text/javascript" src="js/perfBar.js"></script>
+  <script type="text/javascript">
+  perfBar.init({
+    // list of the built-in metrics http://lafikl.github.io/perfBar/#list 
+    budget: { 
+      // the key is the metric id
+      'loadTime': {
+        max: 200
+      },
+      'redirectCount': {
+        max: 1
+      },
+      'globalJS': {
+        min: 2,
+        max: 5
+      }
+    }
+  });
+  </script>
+
   </body>
 </html>
